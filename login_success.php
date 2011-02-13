@@ -1,0 +1,10 @@
+<?php
+session_start();
+$_SESSION['myusername']=$_GET['myusername'];
+if(!session_is_registered(myusername)){
+header("location:main_login.php");
+}
+else{
+header("location:cal.php");
+}
+?>
