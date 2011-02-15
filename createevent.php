@@ -21,17 +21,17 @@ function createEvent ($client, $title, $desc, $where, $startDate, $startTime, $e
   return $createdEvent->id->text;
 }
 
-$title = 'Test Event 2';
-$desc = '<a href="http://localhost/cal.php">Link</a>';
-$where = 'Offices';
-$startDate = '2011-02-10';
+$title = 'HCCPD Demo';
+$desc = '<a href="http://localhost/IEConnect/projects.php">Link</a>';
+$where = 'Lab';
+$startDate = '2011-02-15';
 $startTime = '13:00';
-$endDate = '2011-02-10';
+$endDate = '2011-02-15';
 $endTime = '16:00';
 $tzOffset = '-05';
 
 include 'gcalconnect.php';
 $eid = createEvent ($client, $title, $desc, $where, $startDate, $startTime, $endDate, $endTime, $tzOffset);
 echo "EventCreated";
-echo " $eid"
+echo " $eid";
 ?>

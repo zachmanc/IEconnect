@@ -23,7 +23,7 @@ echo "<center>
 		echo $_SESSION['myusername']; 
 		//echo ". Thanks for logging in"; 
 		echo "</td>
-		<td width=\"300\" align=\"right\" valign=\"top\"> <a href=\"vendors.php\">Vendors</a> | <a href=\"projects.php\">Projects</a> |  <a href=\"cal.php\">Calendar</a>  |  <a href=\"logout.php\">Logout</a></td>
+		<td width=\"300\" align=\"right\" valign=\"top\"> <a href=\"users.php\">Users</a> | <a href=\"vendors.php\">Vendors</a> | <a href=\"projects.php\">Projects</a> |  <a href=\"cal.php\">Calendar</a>  |  <a href=\"logout.php\">Logout</a></td>
 	</tr>
 	</table>
 </center></div>";
