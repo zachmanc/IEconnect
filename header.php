@@ -14,16 +14,16 @@ echo	"<link rel=\"stylesheet\" type=\"text/css\" href=\"shadowbox/shadowbox.css\
 
 echo "<div style=\"background-color:FFFFFF\">";
 echo "<center>
-		<table width=\"700\">
+		<table width=\"800\">
 			<tr>
-		<td width=\"200\"><a rel=\"shadowbox\" href=\"logo.png\"><img src=\"logo.png\" width=\"150\" height=\"100\"></a></td>
+		<td width=\"150\" align=\"left\"><a rel=\"shadowbox\" href=\"logo.png\"><img src=\"logo.png\" width=\"150\" height=\"100\" border=\"0\"></a></td>
 		
-		<td width=\"200\" align=\"center\" valign=\"top\">";
+		<td width=\"150\" align=\"center\" valign=\"top\">";
 		echo "Welcome "; 
 		echo $_SESSION['myusername']; 
 		//echo ". Thanks for logging in"; 
 		echo "</td>
-		<td width=\"300\" align=\"right\" valign=\"top\"> <a href=\"users.php\">Users</a> | <a href=\"vendors.php\">Vendors</a> | <a href=\"projects.php\">Projects</a> |  <a href=\"cal.php\">Calendar</a>  |  <a href=\"logout.php\">Logout</a></td>
+		<td width=\"500\" align=\"right\" valign=\"top\"> <a href=\"http://google.com/accounts/logout\">Logout: Google</a> | <a href=\"users.php\">Users</a> | <a href=\"vendors.php\">Vendors</a> | <a href=\"projects.php\">Projects</a> |  <a href=\"cal.php\">Calendar</a>  |  <a href=\"logout.php\">Logout</a></td>
 	</tr>
 	</table>
 </center></div>";

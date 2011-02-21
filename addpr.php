@@ -28,6 +28,28 @@ if (!mysql_query($sql,$conn))
   die('Error: ' . mysql_error());
   }
   
+$addtablesql = "CREATE TABLE `zachmanc`.`$name` (
+`id` TINYINT NOT NULL AUTO_INCREMENT ,
+`checked` BOOL NOT NULL ,
+`QuoteNum` VARCHAR( 60 ) NOT NULL ,
+`PO` VARCHAR( 60 ) NULL ,
+`Description` VARCHAR( 500 ) NULL ,
+`Vendor` VARCHAR( 60 ) NULL ,
+`SalesOrder` VARCHAR( 60 ) NULL ,
+`VendorShip` DATETIME NULL ,
+`Arrive` DATETIME NULL ,
+`Install` DATETIME NULL ,
+`Notes` VARCHAR( 500 ) NULL ,
+PRIMARY KEY ( `id` )
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci";
+
+echo $addtablesql;
+
+if (!mysql_query($addtablesql,$conn))
+  {
+  die('Error: ' . mysql_error());
+  }
+
 header("Location: $redirect"); 
   
 ?>
